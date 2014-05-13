@@ -13,10 +13,12 @@ foreach ($things as $thing) {
 	} elseif (is_bool($thing)) {
 		echo "{$thing} is a boolean\n";
 	} elseif (is_array($thing)) {
-		echo "{$thing} is a boolean\n";
+		echo "{$thing} is a array\n";
 	} elseif (is_null($thing)) {
 		echo "{$thing} is null\n";
 	} elseif (is_string($thing)) {
 		echo "{$thing} is string\n";
 	}
 }
+
+
