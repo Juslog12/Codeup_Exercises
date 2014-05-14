@@ -24,5 +24,6 @@ $books = array(
 );
 
 foreach ($books as $book) {
-    echo "{$book['name']}, published in {$book["published"]}, was written by {$book["author"]}, and has {$book["pages"]} pages.\n";
+	if ($book['published'] > 1950) {
+    echo "{$book['name']}, published in {$book["published"]}, was written by {$book["author"]}, and has {$book["pages"]} pages.\n";}
 }
