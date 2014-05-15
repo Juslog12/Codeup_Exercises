@@ -10,7 +10,7 @@ function error($a, $b, $flag){
 
 function add($a, $b) {
 	if (is_numeric ($a) && is_numeric($b)) {
-    	echo $a + $b .PHP_EOL;
+    	return $a + $b .PHP_EOL;
     } else {
 		error($a, $b, 1);
 	}	
@@ -18,7 +18,7 @@ function add($a, $b) {
 
 function subtract($a, $b) {
     if (is_numeric ($a) && is_numeric ($b)) {
-    	echo $a - $b .PHP_EOL;
+    	return $a - $b .PHP_EOL;
     } else {
 		error($a, $b, 1);
 	}
@@ -26,7 +26,7 @@ function subtract($a, $b) {
 
 function multiply($a, $b) {
    if (is_numeric ($a) && is_numeric($b)) { 
-    	echo $a * $b .PHP_EOL;
+    	return $a * $b .PHP_EOL;
     } else {
 		error($a, $b, 1);
 	}
@@ -34,9 +34,9 @@ function multiply($a, $b) {
 
 function divide($a, $b) {
     if  ($b == 0) {
-		error($a, $b, 2);
+		return false;
 	} elseif (is_numeric ($a) && is_numeric($b)) { 
-    	echo $a / $b .PHP_EOL;
+    	return $a / $b .PHP_EOL;
     } else {
 		error($a, $b, 1);
 	}
@@ -44,14 +44,14 @@ function divide($a, $b) {
 
 function modulus($a, $b) {
    if (is_numeric ($a) && is_numeric($b)) { 
-    	echo $a % $b .PHP_EOL;
+    	return $a % $b .PHP_EOL;
     } else {
 		error($a, $b, 1);
 	}
 }
 
-add(20, "J");
-subtract(5, 10);
-multiply(3, 3);
-divide(2, 0);
-modulus (3,'J');
+echo add(20, 5);
+echo subtract(5, 10);
+echo multiply(3, 3);
+echo divide(2, 3);
+echo modulus (3,1);
