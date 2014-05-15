@@ -33,13 +33,11 @@ function multiply($a, $b) {
 }
 
 function divide($a, $b) {
-    if  ($b == 0) {
-		return false;
-	} elseif (is_numeric ($a) && is_numeric($b)) { 
+    if ($b == 0) {
+    	return "Cannot divide by ";
+	} elseif (is_numeric($a) && is_numeric($b)) {
     	return $a / $b .PHP_EOL;
-    } else {
-		error($a, $b, 1);
-	}
+    }	 
 }
 
 function modulus($a, $b) {
@@ -47,11 +45,11 @@ function modulus($a, $b) {
     	return $a % $b .PHP_EOL;
     } else {
 		error($a, $b, 1);
-	}
+	}	
 }
 
 echo add(20, 5);
 echo subtract(5, 10);
 echo multiply(3, 3);
-echo divide(2, 3);
+echo divide(2, 0);
 echo modulus (3,1);
