@@ -1,28 +1,51 @@
 <?php
 
 function add($a, $b) {
-    echo $a + $b . PHP_EOL;
+	if (is_numeric ($a) && is_numeric($b)) {
+    	echo $a + $b;
+    } else {
+		echo "ERROR: both a and b should be numbers\n";
+	}
 }
 
 function subtract($a, $b) {
-    echo $a - $b . PHP_EOL;
+    if (is_numeric ($a) && is_numeric($b)) {
+    	echo $a - $b .PHP_EOL;
+    } else {
+		echo "ERROR: both a and b should be numbers\n";
+	}
 }
 
 function multiply($a, $b) {
-    echo $a * $b . PHP_EOL;
+   if (is_numeric ($a) && is_numeric($b)) { 
+    	echo $a * $b .PHP_EOL;
+    } else {
+		echo "ERROR: both a and b should be numbers\n";
+	}
 }
 
 function divide($a, $b) {
-    echo $a / $b . PHP_EOL;
+   if (is_numeric ($a) && is_numeric($b)) { 
+    	echo $a / $b .PHP_EOL;
+    } else {
+		echo "ERROR: both a and b should be numbers\n";
+	}
 }
 
 function modulus($a, $b) {
-    echo $a % $b . PHP_EOL;
+   if (is_numeric ($a) && is_numeric($b)) { 
+    	echo $a % $b .PHP_EOL;
+    } else {
+		echo "ERROR: both a and b should be numbers\n";
+	}
 }
 
-add(10, 20);
-subtract(0, 10);
-multiply(3, 3);
-divide(25, 5);
-modulus (3,2);
+add(J, 20);
+subtract(J, 10);
+multiply(J, 3);
+divide(J, 5);
+modulus (J,2);
+
+
+
 
