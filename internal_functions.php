@@ -4,6 +4,8 @@ $nothing = NULL;
 $something = '';
 $array = array(1,2,3);
 
+unset($nothing);
+
 // Create a function that checks if a variable is set or empty, and display "$variable_name is SET|EMPTY"
 
 function test ($a) {
@@ -17,7 +19,7 @@ function test ($a) {
 
 // TEST: If var $nothing is set, display '$nothing is SET'
 
-echo '$nothing' . test($nothing);
+echo '$nothing' . test(($nothing));
 echo '$something' . test($something);
 
 
@@ -37,4 +39,4 @@ $serial = serialize($array);
 
 $clone = unserialize($serial);
 	print_r($clone);
-		
+
