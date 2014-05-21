@@ -18,6 +18,15 @@ function array_has_value($needle, $haystack) {
 	 }
 }
 
+//Another way to write this set of functions for name search in the array
+
+//$query = 'Tina';
+
+//$result = array_search($query, $names); 
+
+//if ($result !== FALSE) {
+//	echo $names[$result] . PHP_EOL;
+//}
 //var_dump(array_has_value('Tina', $names));
 
 //var_dump(array_has_value('Bob', $names));

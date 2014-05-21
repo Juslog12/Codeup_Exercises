@@ -12,7 +12,7 @@ if ($x > 0 || $x < 10) {
 	echo "x is greater than 0 OR less than 10\n";
 }
 
-if ($x > 0 && x < 10) {
+if ($x > 0 && $x < 10) {
 	echo "x is greater than 0 AND less than 10\n";
 }
 
@@ -20,6 +20,6 @@ if ($y > 0 || $z < 10) {
 	echo "x is greater than 0 OR less than 10\n";
 }
 
-if ($y > 5 && z <10) {
+if ($y > 5 && $z <10) {
 	echo "$y is greater than 0 AND less than 10\n";
 }

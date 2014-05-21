@@ -12,7 +12,7 @@ foreach ($things as $thing) {
 		echo "{$thing} is a float\n";
 	} elseif (is_bool($thing)) {
 		echo "{$thing} is a boolean\n";
-	} elseif (is_array($thing)) {
+	} elseif (is_array($thing)); {
 		echo "{$thing} is a array\n";
 	} elseif (is_null($thing)) {
 		echo "{$thing} is null\n";
