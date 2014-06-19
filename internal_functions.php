@@ -8,10 +8,14 @@ unset($nothing);
 
 // Create a function that checks if a variable is set or empty, and display "$variable_name is SET|EMPTY"
 
-function test ($a) {
-		if (isset($a)) {
+function test ($a) 
+{
+		if (isset($a)) 
+		{
 			return " is SET.\n";
-		} elseif (empty($a)) {
+		} 
+		elseif (empty($a)) 
+		{
 			return " is EMPTY.\n";
 		}
 }
@@ -40,3 +44,4 @@ $serial = serialize($array);
 $clone = unserialize($serial);
 	print_r($clone);
 
+?>
